@@ -33,15 +33,7 @@
       font-weight: bold;
       font-size: 16px;
     }
-    input[type="text"] {
-      width: 100%;
-      padding: 12px;
-      margin: 8px 0;
-      border: 2px solid #ccc;
-      border-radius: 5px;
-      background-color: #34495e;
-      color: white;
-    }
+    input[type="text"],
     input[type="number"] {
       width: 100%;
       padding: 12px;
@@ -109,9 +101,9 @@
       }
       
       alert(`شما ${depositAmount} USDT یا BNB را به آدرس کیف پول ${walletAddress} واریز کردید. برای تکمیل خرید اشتراک، لطفاً به کانال تلگرام مراجعه کنید.`);
-      
-      // ارسال جزئیات واریز به شما از طریق ایمیل یا API
-      fetch('https://your-api-url.com/transaction', {
+
+      // ارسال جزئیات تراکنش به سرور شما
+      fetch('https://YAPI5PH3D25S7DIRR3KQ26XDCQNSHYDNEH.com/transaction', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
